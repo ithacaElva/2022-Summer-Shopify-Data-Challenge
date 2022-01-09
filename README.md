@@ -29,10 +29,10 @@ There is no evidence of progressive increase of AOV, but we can say there are su
 
 #### b.	What metric would you report for this dataset?
 
-1.**Median Order Value:**
+1. **Median Order Value:**
 Compared with the averaged order value, the median order value is a more robust metric and will not easily affected by outliers.
 
-2.**Revised AOV (after removing outliers):**
+2. **Revised AOV (after removing outliers):**
 If we remove the extreme values of order amount made by NO.607 user at NO.42 shop and all orders made at NO.78 shop, we can get a revised AOV.
 
 Personally, I prefer the first one, median order value to report for this dataset.
