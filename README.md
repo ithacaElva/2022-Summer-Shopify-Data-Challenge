@@ -6,11 +6,12 @@ On Shopify, we have exactly 100 sneaker shops, and each of these shops sells onl
 #### a.	Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
 
 To diagnose the problem, I conducted the following analysis. 
--	Exploratory Data Analysis: 
+
+**-	Exploratory Data Analysis:**
 
 As the max value (704,000) of order amount is much larger than its median (284), and the standard deviation (41,282.5) of order amount is super large, I suspect that there may exist extreme (high) values in the order values because average order value can be easily affected by those extreme (high) values. To figure out the reason behind, I conducted deep-dive analysis from 4 perspectives.
 
--	Deep-dive Analysis:
+**-	Deep-dive Analysis:**
 
 1. **Check if any anomalies exist in the order amount by plotting the box plot.**
 In the 5,000 data, there are 141 data associated with an order amount larger than Q3+1.5IQR, which are outliers according to the boxplot.
