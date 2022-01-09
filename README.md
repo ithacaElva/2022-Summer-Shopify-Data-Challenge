@@ -20,14 +20,10 @@ As the target metric, AOV, can be decomposed into total_items and price_per_item
 
 3. Segment AOV by shop, user and payment method.
 By, segmenting AOV by shop, I found the order records NO.42 and NO.78 shop are anomalous. Particularly, the price of sneaker models sold at NO.42 shop is   normal, but NO.607 user purchased 17 times at NO.42 shop and each time the NO.607 user 
-purchased 2000 pairs of sneakers which in total is 704,000 order amount. In addition, the price of sneakers sold at NO.78 shop is 25,725 per pair, which is very expensive, so that every order amount at NO.78 shop is over 25,725. And there is no obvious anomaly with regards to particular payment method.
-
-The above anomalous data of NO.607 user at NO.42 shop and all orders at NO.78 shop lead to a high value of AOV. If we removing the above anomalous data, the AOV will drop from 3145.13 to 302.58. 
+purchased 2000 pairs of sneakers which in total is 704,000 order amount. In addition, the price of sneakers sold at NO.78 shop is 25,725 per pair, which is very expensive, so that every order amount at NO.78 shop is over 25,725. And there is no obvious anomaly with regards to particular payment method.The above anomalous data of NO.607 user at NO.42 shop and all orders at NO.78 shop lead to a high value of AOV. If we removing the above anomalous data, the AOV will drop from 3145.13 to 302.58. 
 
 4. Check temporal factor by plotting the time series trend of AOV.
-There is no evidence of progressive increase of AOV, but we can say there are sudden increase in AOV because once the NO.607 user purchased at NO.42 shop or any order is made at NO.78 shop the AOV will increase at that day.
-
-Worth to mention, there are two different order but all the information of the order are the same including the timestamp of purchase. Therefore, I suspect that there may be some manual mistake or technical issue cased mistake in this dataset.
+There is no evidence of progressive increase of AOV, but we can say there are sudden increase in AOV because once the NO.607 user purchased at NO.42 shop or any order is made at NO.78 shop the AOV will increase at that day. Worth to mention, there are two different order but all the information of the order are the same including the timestamp of purchase. Therefore, I suspect that there may be some manual mistake or technical issue cased mistake in this dataset.
 
 
 #### b.	What metric would you report for this dataset?
